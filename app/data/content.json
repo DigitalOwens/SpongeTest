@@ -6,6 +6,13 @@
     "myname": "Megan Owens"      
       
   },
+  "test": {
+    "title1": "About Me",
+    "title2": "Photo",
+    "title3": "Links",
+    "photo": "<img src='resources/MeganOwens.jpg'>"
+  },
+    
   "content": {
     "title": "HTML",
     "body": "<p><strong>Hyper Text Markup Langage</strong> commonly referred to as <strong>“HTML”</strong>. Along with <a href='https://en.wikipedia.org/wiki/Cascading_Style_Sheets'>CSS</a>, & <a href='https://en.wikipedia.org/wiki/JavaScript'>JavaScript</a>, HTML is a cornerstone technology, used by most websites to create visually engaging web pages, user interfaces for  web applications, and user interfaces for many mobile applications.</p><p>The W3C recommends several conventions to ensure an easy migration between HTML and XHTML (see <a href='https://www.w3.org/TR/xhtml1/#guidelines'>HTML Compatibility Guidelines</a>). The following steps can be applied to XHMTL 1.0 documents only:</p><ul><li>Include both xml:lang and lang attributes on any elements assigning language</li><li>Use the empty-element syntax only for elements specified as empty in HTML  </li><li>Include an extra space in empty–element tags for example:<code>&lt;br /&gt;</code>instead of <code>&lt;br/&gt;</code></li><li>Include explicit close tags for elements that permit content but are left empty (for example,<code>&lt;div&gt;</code><code>&lt;/div&gt;</code>, not <code>&lt;div /&gt;</code>)</li><li>Omit the XML declaration</li></ul><p>HTML5 is a markup language used for structuring and presenting content on the <a href='https://en.wikipedia.org/wiki/World_Wide_Web'>World Wide Web</a>. It was finalised, and published, on 28 October 2014 by the World Wide Web Consortium (W3C). This is the fifth revision of the <a href='https://en.wikipedia.org/wiki/HTML'>HTML</a> standard since the inception of the World Wide Web.",
@@ -34,6 +41,7 @@
       }
     }
   },
+  
   "tasks": {
     "test": [
       {

@@ -26,47 +26,55 @@
 <div id="header-wrapper">
   <header id="header" class="grid-container"></header>
 </div>
+    
+<div id="test" class="grid-50">
+</div>  
+
+<!-- Accordion Handlebars template -->
 <div class="grid-container">
   <section class="grid-50">
-      <button class="accordion">About Me</button>
-        <div class="panel">
-            <p>Hello! I'm Megan a creative technologist. I've just finished my degree in Digital Art & Technology, expecting a first. My desire to succeed has always been strong in whatever I did, I played hockey at county level and represented Wales playing chess. In my free time I like to play on my PS4, go on adventures, and spend time with friends, family and pets! 
-            </p>
-        </div>
-        <button class="accordion">Photo</button>
-        <div class="panel imgAboutMe">
-          <img src="resources/MeganOwens.jpg">
-        </div>
-        <button class="accordion">Links</button>
-        <div class="panel">
-         <table>
-          <tr>
-            <th>Link</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td><a href="http://www.meganowens.co.uk">Portfolio Site</a></td>
-            <td>This is my own portfolio website, I edit this as often as I can to showcase new work. I designed all the assets myself.</td>
-          </tr>
-          <tr>
-            <td><a href="http://www.plymouthoffices.co.uk">The Loft Offices</a></td>
-              <td>My most recent freelance website. After creating <a href="http://marinabar.co.uk">The Marina Bar</a>'s website, my client was so impressed they wanted me to create them a site for their new business venture. I took the photos and designed the logo as well!</td>
-          </tr>
-          <tr>
-            <td><a href="http://www.tskchess.com">TSK Chess</a></td>
-            <td>This was my first website design for a client. I made it voluntarily to gain experience. Quite a lot of chess related pages are outdated, so I tried to give it a modern, clean and simplistic aesthetic.</td>
-          </tr>
-        </table>
-        </div>
-
-    <!-- INSERT YOUR "ABOUT ME" SECTION HERE -->
-    <article id="content"></article>
+      <!-- INSERT YOUR "ABOUT ME" SECTION HERE -->
+          <button class="accordion">About Me</button>
+            <div class="panel">
+                <p>Hello! I'm Megan a creative technologist. I've just finished my degree in Digital Art & Technology, expecting a first. My desire to succeed has always been strong in whatever I did, I played hockey at county level and represented Wales playing chess. In my free time I like to play on my PS4, go on adventures, and spend time with friends, family and pets! 
+                </p>
+            </div>
+            <button class="accordion">Photo</button>
+            <div class="panel imgAboutMe">
+              <img src="resources/MeganOwens.jpg">
+            </div>
+            <button class="accordion">Links</button>
+            <div class="panel">
+            <table>
+              <tr>
+                <th>Link</th>
+                <th>Description</th>
+              </tr>
+              <tr>
+                <td><a href="http://www.meganowens.co.uk">Portfolio Site</a></td>
+                <td>This is my own portfolio website, I edit this as often as I can to showcase new work. I designed all the assets myself.</td>
+              </tr>
+              <tr>
+                <td><a href="http://www.plymouthoffices.co.uk">The Loft Offices</a></td>
+                  <td>My most recent freelance website. After creating <a href="http://marinabar.co.uk">The Marina Bar</a>'s website, my client was so impressed they wanted me to create them a site for their new business venture. I took the photos and designed the logo as well!</td>
+              </tr>
+              <tr>
+                <td><a href="http://www.tskchess.com">TSK Chess</a></td>
+                <td>This was my first website design for a client. I made it voluntarily to gain experience. Quite a lot of chess related pages are outdated, so I tried to give it a modern, clean and simplistic aesthetic.</td>
+              </tr>
+            </table>
+          </div>
+     
+      <article id="content"></article>
+      
     <noscript>
       <h1>You must enable JavaScript in order to view this page.</h1>
     </noscript>
   </section>
+      
   <aside id="tasks" class="grid-45 prefix-5"></aside>
-</div>
+ </div>
+
 <div id="footer-wrapper">
   <footer id="footer" class="grid-container">
     <div class="grid-100">
@@ -76,6 +84,7 @@
     </div>
   </footer>
 </div>
+
 
 <!-- Header Handlebars template -->
 <script id="header-template" type="text/x-handlebars-template">
@@ -87,7 +96,14 @@
     <p><em>Hello, my name is<br></em><strong>{{{myname}}}</strong></p>
   </div>
 </script>
-
+    
+<!-- Test Handlebars template --> 
+<script id="test-template" type="text/x-handlebars-template">
+  <div class="grid-60">
+    <h1>{{title1}}</h1>
+  </div>
+</script>
+    
 <!-- Task item Handlebars template -->
 <script id="task-template" type="text/x-handlebars-template">
   {{#each test}}
