@@ -15,6 +15,7 @@
  Page-specific JS
 =====================================================
 */
+/* I wish I knew how to do task 7! */
 
 jQuery(
 		function( $ ) {
