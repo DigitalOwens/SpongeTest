@@ -191,15 +191,66 @@ strong {
  * Styles to make the boxes actually visible to start
  */
 #boxes {
-  padding: 40px;
+  padding: 100px;
+  position: relative; /* allows a position outside of margins */
+    
+}
+
+#boxes:after{
+    content: 'Wrapper';
+    color: white;
+    font-size: 1.5em;
+    background-color: #7B0051;
+    position: absolute;
+    bottom: -37px;
+    right: 0;
+    padding: 10px;
+    
 }
 
 #box-left {
-  height: 50px;
+    height: 50px;
+    width: 210px;
+   
+}
+
+#box-left:after {
+    content: 'Left';
+    color: white;
+    font-size: 1.5em;
+    position: relative;
+    top: 36%;
+    left: 42%;
+     z-index: 1;
+   
+}
+
+#box-left-content span{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
 }
 
 #box-right {
-  height: 50px;
+  display: block;
+    min-width: 50px;
+    width: 50%;
+    height: 100%;
+    z-index: 0;
+    vertical-align: middle;
+    float: right;
+    height: 150px;
+    right: 0;
+}
+
+#box-right:after {
+    content:'Right';
+    color: white;
+    font-size: 1.5em;
+    position: relative;
+    left: 42%;
+    top: 50%;
+ 
 }
 
 /**
@@ -251,7 +302,7 @@ div.panel p{
     width: 200px;
     height: 150px;
     margin-left: auto;
-    margin-right: auto }
+    margin-right: auto;
 }
 
 table {
