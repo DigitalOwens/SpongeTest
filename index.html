@@ -21,12 +21,44 @@
   <!-- The CSS for this page -->
   <link href="app/css/spongetest.css" rel="stylesheet">
 </head>
+    
 <body>
 <div id="header-wrapper">
   <header id="header" class="grid-container"></header>
 </div>
 <div class="grid-container">
   <section class="grid-50">
+      <button class="accordion">About Me</button>
+        <div class="panel">
+            <p>Hello! I'm Megan a creative technologist. I've just finished my degree in Digital Art & Technology, expecting a first. My desire to succeed has always been strong in whatever I did, I played hockey at county level and represented Wales playing chess. In my free time I like to play on my PS4, go on adventures, and spend time with friends, family and pets! 
+            </p>
+        </div>
+        <button class="accordion">Photo</button>
+        <div class="panel imgAboutMe">
+          <img src="resources/MeganOwens.jpg">
+        </div>
+        <button class="accordion">Links</button>
+        <div class="panel">
+         <table>
+          <tr>
+            <th>Link</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td><a href="http://www.meganowens.co.uk">Portfolio Site</a></td>
+            <td>This is my own portfolio website, I edit this as often as I can to showcase new work. I designed all the assets myself.</td>
+          </tr>
+          <tr>
+            <td><a href="http://www.plymouthoffices.co.uk">The Loft Offices</a></td>
+              <td>My most recent freelance website. After creating <a href="http://marinabar.co.uk">The Marina Bar</a>'s website, my client was so impressed they wanted me to create them a site for their new business venture. I took the photos and designed the logo as well!</td>
+          </tr>
+          <tr>
+            <td><a href="http://www.tskchess.com">TSK Chess</a></td>
+            <td>This was my first website design for a client. I made it voluntarily to gain experience. Quite a lot of chess related pages are outdated, so I tried to give it a modern, clean and simplistic aesthetic.</td>
+          </tr>
+        </table>
+        </div>
+
     <!-- INSERT YOUR "ABOUT ME" SECTION HERE -->
     <article id="content"></article>
     <noscript>
@@ -87,6 +119,24 @@
       </ul>
     {{/with}}
   {{/with}}
+</script>
+
+<!-- Accordion Style -->   
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
 </script>
 
 <!-- Documentation link Handlebars template -->
